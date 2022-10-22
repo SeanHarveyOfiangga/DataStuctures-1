@@ -38,5 +38,20 @@ def myname():
         for col in range(7):
             if (col==0 or col==6) or (row==col and (col>0 and col<6)):
                 print_N[row][col] = "*"
+    # This will put all the patterns in a straight line horizontally
+    for i in range(7):
+        for j in range (7):
+            print(print_S[i][j], end=" ")
+        print(end=" ")
+        for j in range (7):
+            print(print_E[i][j], end=" ")
+        print(end=" ")
+        for j in range (7):
+            print(print_A[i][j], end=" ")
+        print(end=" ")
+        for j in range (7):
+            print(print_N[i][j], end=" ")
+        print()
 
+myname() 
 
