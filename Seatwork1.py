@@ -32,3 +32,11 @@ def myname():
             if((col==0 or col==4) and row!=0) or ((row==0 or row==3) and (col>0 and col<4)):
                 print_A[row][col] = "*"
 
+    # N
+    print_N = [[" " for i in range(7)] for j in range (7)]
+    for row in range(7):
+        for col in range(7):
+            if (col==0 or col==6) or (row==col and (col>0 and col<6)):
+                print_N[row][col] = "*"
+
+
