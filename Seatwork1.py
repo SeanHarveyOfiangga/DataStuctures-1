@@ -11,7 +11,7 @@ def intro():
 intro()
 
 def myname():
-        # S
+    # S
     print_S = [[" " for i in range(7)] for j in range (7)]
     for row in range(7):
         for col in range(5):
@@ -24,4 +24,11 @@ def myname():
         for col in range(5):
             if col==0 or ((row==0 or row==3 or row==6) and (col>0)):
                 print_E[row][col] = "*"
+
+    # A
+    print_A = [[" " for i in range(7)] for j in range (7)]
+    for row in range(7):
+        for col in range(5):
+            if((col==0 or col==4) and row!=0) or ((row==0 or row==3) and (col>0 and col<4)):
+                print_A[row][col] = "*"
 
